@@ -25,7 +25,7 @@ function App() {
       </div>
            <div>
             <Routes>
-              <Route path='/' element={<CustomerRoute/>}></Route>
+              <Route path='/*' element={<CustomerRoute/>}></Route>
             </Routes>
             </div>
             <div>
@@ -38,7 +38,7 @@ function App() {
               {/* <OrderDetails/> */}
             
             </div>
-            <Footer/>
+           
     </div>
   );
 }

@@ -4,6 +4,7 @@ import HomePage from '../customer/pages/HomePage/HomePage'
 import Cart from '../customer/components/Cart/Cart'
 import Product from '../customer/components/Product/Product'
 import Footer from '../customer/components/Footer/Footer'
+import ProductDetails from '../customer/components/ProductDetails/ProductDetails'
 
 const CustomerRoute = () => {
   return (
@@ -12,10 +13,12 @@ const CustomerRoute = () => {
 
         </div>
         <Routes>
-            <Route path='/home' element={<HomePage/>} caseSensitive={true}></Route>
+            <Route path='/' element={<HomePage/>} ></Route>
             <Route path='/cart' element={<Cart/>}></Route>
-            <Route path='/lavelOne/:lavelTwo/:lavelThree' element={<Product/>}></Route>
-        
+            <Route path='/:lavelOne/:lavelTwo/:levelThree' element={<Product/>} />
+            <Route path='/:product/:productId' element={<ProductDetails/>} />
+          
+           
 
               {/* <HomePage/> */}
               {/* <Product/> */}
@@ -26,7 +29,7 @@ const CustomerRoute = () => {
               {/* <OrderDetails/> */}
         </Routes>
         <div>
-        {/* <Footer/> */}
+         <Footer/> 
         </div>
     </div>
   )

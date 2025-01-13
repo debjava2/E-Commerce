@@ -29,14 +29,13 @@ export default function Example() {
   const handleCategoryClick=(category,section,item,e)=>{
     e.preventDefault();  // Prevent default link behavior
     e.stopPropagation();
-    setOpen(false)
+    setOpen(false);
     navigate(`/${category.id}/${section.id}/${item.name}`);
    
   }
 
-  function callme(){
-    setOpen(false)
-  }
+
+
 
   return (
     <div className="bg-white">
@@ -244,7 +243,8 @@ export default function Example() {
                                     >
                                       {section.items.map((item) => (
                                         <li key={item.name} className="flex">
-                                          <a href={item.href} className="hover:text-gray-800"  onClick={(e) => {
+                                          <a href={item.href} className="hover:text-gray-800" 
+                                           onClick={(e) => {
         e.preventDefault(); // Prevents the default link navigation
         handleCategoryClick(category, section, item,e); // Call the handler
       }}

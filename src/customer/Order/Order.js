@@ -40,11 +40,11 @@ const Order = () => {
             </div>
           </div>
         </Grid>
-        <Grid item xs={9} sx={{ mt: 2 }} >
+        <Grid item xs={9} sx={{ mt: 2 }}>
           <div className="space-y-5">
-          {
-            [1,2,3,4,5,6].map((item) => <OrderCard key={item} />)
-          }
+            {[1, 2, 3, 4, 5, 6].map((item) => (
+              <OrderCard key={item} />
+            ))}
           </div>
         </Grid>
       </Grid>
