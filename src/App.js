@@ -20,24 +20,20 @@ function App() {
  
   return (
     <div>
-      <div>
-      <Navigation/>
-      </div>
-           <div>
+      
+          
             <Routes>
               <Route path='/*' element={<CustomerRoute/>}></Route>
             </Routes>
-            </div>
-            <div>
-              {/* <HomePage/> */}
+             {/* <HomePage/> */}
               {/* <Product/> */}
               {/* <ProductDetails/> */}
               {/* <Cart/> */}
               {/* <Checkout/> */}
               {/* <Order/> */}
               {/* <OrderDetails/> */}
-            
-            </div>
+          
+          
            
     </div>
   );
